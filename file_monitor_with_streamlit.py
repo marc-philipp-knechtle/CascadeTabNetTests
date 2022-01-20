@@ -17,7 +17,7 @@ from mmdet.apis import init_detector, inference_detector, show_result_pyplot
 import streamlit
 
 SCRIPTS_LOCATION: str = "/home/makn/workspace-uni/CascadeTabNetTests"
-FILE_LOCATION: str = SCRIPTS_LOCATION + "/CascadeTabNet/Demo"
+FILE_LOCATION: str = SCRIPTS_LOCATION + "/files"
 CASCADE_TAB_NET_REPO_LOCATION: str = SCRIPTS_LOCATION + "/CascadeTabNet"
 
 VISUALISATION_LOCATION: str = FILE_LOCATION + "/Visualisation"
