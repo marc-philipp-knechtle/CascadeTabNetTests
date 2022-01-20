@@ -20,7 +20,7 @@ FILE_LOCATION: str = SCRIPTS_LOCATION + "/CascadeTabNet/Demo"
 
 VISUALISATION_LOCATION: str = FILE_LOCATION + "/Visualisation"
 
-VISUALISATION_LOCATION_DETECTED = FILE_LOCATION + "/VisualisationExtracted"
+VISUALISATION_LOCATION_DETECTED = FILE_LOCATION + "/VisualisationDetected"
 
 text_to_display = "initial text to display"
 changed: bool = False
