@@ -22,7 +22,7 @@ CASCADE_TAB_NET_REPO_LOCATION: str = SCRIPTS_LOCATION + "/CascadeTabNet"
 
 VISUALISATION_LOCATION: str = FILE_LOCATION + "/Visualisation"
 
-VISUALISATION_LOCATION_DETECTED = FILE_LOCATION + "/VisualisationExtracted"
+VISUALISATION_LOCATION_DETECTED = FILE_LOCATION + "/VisualisationDetected"
 
 
 def move_to_extracted(filepath: str):
