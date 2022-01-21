@@ -13,8 +13,9 @@ can still be used by the pure json encoding folder watcher :)
 """
 import os
 import time
-from mmdet.apis import init_detector, inference_detector, show_result_pyplot
+
 import streamlit
+from mmdet.apis import init_detector, inference_detector, show_result_pyplot
 
 SCRIPTS_LOCATION: str = "/home/makn/workspace-uni/CascadeTabNetTests"
 FILE_LOCATION: str = SCRIPTS_LOCATION + "/files"
