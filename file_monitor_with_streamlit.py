@@ -14,6 +14,7 @@ can still be used by the pure json encoding folder watcher :)
 import os
 import time
 
+import matplotlib
 import streamlit
 from mmdet.apis import init_detector, inference_detector, show_result_pyplot
 
@@ -53,8 +54,9 @@ def run_detection(image_path: str):
     result = inference_detector(model, image_path)
 
     # Visualization results
-    image = show_result_pyplot(img=image_path, result=result, class_names=("Bordered", "cell", "Borderless"),
-                               score_thr=0.85)
+    image: matplotlib.pyplot = show_result_pyplot(img=image_path, result=result,
+                                                  class_names=("Bordered", "cell", "Borderless"),
+                                                  score_thr=0.85)
     streamlit.pyplot(image)
 
 
