@@ -17,6 +17,7 @@ import time
 import matplotlib
 import streamlit
 from mmdet.apis import init_detector, inference_detector, show_result_pyplot
+from torch.nn import Module
 
 SCRIPTS_LOCATION: str = "/home/makn/workspace-uni/CascadeTabNetTests"
 FILE_LOCATION: str = SCRIPTS_LOCATION + "/files"
@@ -48,15 +49,20 @@ def run_detection(image_path: str):
     # Load model
     config_file = CASCADE_TAB_NET_REPO_LOCATION + "/Config/cascade_mask_rcnn_hrnetv2p_w32_20e.py"
     checkpoint_file = SCRIPTS_LOCATION + "/epoch_36.pth"
-    model = init_detector(config_file, checkpoint_file, device="cuda:0")
+
+    # pycharm debugger: model = CascadeRCNN
+    model: Module = init_detector(config_file, checkpoint_file, device="cuda:0")
 
     # Run Inference
+    # pycharm debugger:  this is a tuple from two lists
+    # ~/Downloads/testdir/table1.png ~ both lists have length 80
     result = inference_detector(model, image_path)
 
     # Visualization results
     image: matplotlib.pyplot = show_result_pyplot(img=image_path, result=result,
                                                   class_names=("Bordered", "cell", "Borderless"),
                                                   score_thr=0.85)
+
     streamlit.pyplot(image)
 
 
