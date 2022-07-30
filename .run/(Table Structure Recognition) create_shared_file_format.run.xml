@@ -3,14 +3,17 @@
     <module name="CascadeTabNetTests" />
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="PARENT_ENVS" value="true" />
+    <envs>
+      <env name="PYTHONUNBUFFERED" value="1" />
+    </envs>
     <option name="SDK_HOME" value="" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CascadeTabNet/Table Structure Recognition" />
     <option name="IS_MODULE_SDK" value="true" />
     <option name="ADD_CONTENT_ROOTS" value="true" />
     <option name="ADD_SOURCE_ROOTS" value="true" />
     <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CascadeTabNet/Table Structure Recognition/shared-file-format/create_shared_file_format.py" />
-    <option name="PARAMETERS" value="-c $PROJECT_DIR$/epoch_36.pth -co $PROJECT_DIR$/CascadeTabNet/Config/cascade_mask_rcnn_hrnetv2p_w32_20e.py --extraction $USER_HOME$/Downloads/cascade-tab-net-tests/extraction --extractionDetected $USER_HOME$/Downloads/cascade-tab-net-tests/extractionDetected --extractionJson $USER_HOME$/Downloads/cascade-tab-net-tests/extractionJson" />
+    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CascadeTabNet/Table Structure Recognition/create_shared_file_format.py" />
+    <option name="PARAMETERS" value="-c $PROJECT_DIR$/epoch_36.pth -co $PROJECT_DIR$/CascadeTabNet/Config/cascade_mask_rcnn_hrnetv2p_w32_20e.py --extraction $USER_HOME$/tmp/cascade-tab-net-test/extraction --extractionDetected $USER_HOME$/tmp/cascade-tab-net-test/extractionDetected --extractionJson $USER_HOME$/tmp/cascade-tab-net-test/extractionJson" />
     <option name="SHOW_COMMAND_LINE" value="true" />
     <option name="EMULATE_TERMINAL" value="false" />
     <option name="MODULE_MODE" value="false" />
