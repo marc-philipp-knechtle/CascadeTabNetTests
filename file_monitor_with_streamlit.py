@@ -4,7 +4,7 @@ general idea: two folders - /Visualisation
                             /JsonExtraction
 
 The Visualisation folder shows the generated baselines etc. with streamlit
-The JsonExtraction uses the shared-file-format to create json's based on those images
+The JsonExtraction uses the shared_file_format to create json's based on those images
 
 I know that the folder watcher implemented with watchdog.event_handler would have been a better solutions.
 Sadly streamlit together with the multiprocessing of watchdog events led to unexpected concurrency issues.
