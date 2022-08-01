@@ -12,4 +12,8 @@ watchdog~=2.1.6
 lxml~=4.7.1
 opencv-contrib-python
 
-pdf2image
+pdf2image~=1.16.0
+
+loguru~=0.5.3
+pymongo~=4.0.1
+Pillow~=6.2.1
